@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Website1</title>
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        $(".toggle").on("click", function(){
+            if($(".item").hasClass("active")){
+                $(".item").removeClass("active");
+            }
+            else{
+                $(".item").addClass("active");
+            }
+        })
+
+    });
+</script>
+</head>
+<body>
+    <div class="hero">
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">UJ-Developer.dev</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="bio.html">About</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item button"><a href="#">Login</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <h1 style="text-align:center;">UDay Kumar GS About Page</h1>
+    <h3>Welcome to my first website</h3>
+
+    </div>
+    <div>
+        <h1>UDay Kumar GS About Page</h1>
+    </div>
+    <footer>
+        <a href="#" style="position: fixed; bottom:0">https://youtube.com/bhargavi kitchen</a>
+    </footer>
+</body>
+</html>
